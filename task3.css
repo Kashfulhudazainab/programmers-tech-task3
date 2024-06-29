@@ -1,0 +1,283 @@
+*{
+    margin: 0;
+    padding:0;
+}
+
+#item{
+   
+    font-size: x-large;
+    color: brown;
+}
+
+#footer{
+    padding-top:10px;
+    padding-bottom:10px;
+    display: block;
+    background-color: rgb(48, 28, 28);
+    height:fit-content;
+    color:rgb(208, 239, 239);
+}
+
+#foota{
+display: grid;
+justify-content: center;
+align-items: center;
+}
+
+.feedback{
+    display: block;
+    width:240px;
+    height:200px;
+}
+
+.icons {
+    display: block;
+    border: 2px solid rgb(25, 17, 17);
+    border-radius: 30px;
+    
+    height: 20px;
+    padding: 10px;
+    color: white;
+    display: inline;
+    background-color: rgb(25, 17, 17);
+}
+
+.icons:hover {
+    background-color: rgb(241, 148, 120);
+    border: 2px solid rgb(241, 148, 120);
+    color: #070707
+} 
+
+.link{
+   
+color:rgb(48, 145, 145);
+text-decoration: none;
+list-style-type: none;
+}
+
+.link:hover{
+    color: rgb(241, 148, 120);
+}
+
+
+#contain{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(215, 233, 248);
+}
+
+#para{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    color:rgb(111, 32, 3);
+    padding:40px;
+}
+
+#home-img{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    height:300px;
+    width:500px;
+}
+
+#course-contain{
+    display: block;
+    padding:20px;
+    background-color:rgb(215, 233, 248);
+}
+
+.card{
+    
+    margin:10px;
+}
+
+.card:hover{
+    color: beige;
+    background-color: rgb(195, 160, 228);
+}
+
+.card-text{
+    text-align: justify;
+}
+
+#apply{
+    color: rgb(110, 6, 208);
+    background-color: rgb(9, 204, 129);
+}
+
+#apply:hover{
+background-color: rgb(179, 197, 213);
+color: rgb(10, 61, 41);
+border: rgb(110, 6, 208);
+}
+
+.box-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap:25px;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column;
+    padding:20px;
+    min-height: 100vh;
+}
+
+.box-container .box{
+    max-width:700px;
+    background-color: rgb(216, 232, 227);
+    border: 2px solid darkslategray;
+    box-shadow:0 5px 10px rgba(0,0,0,0.2);
+    overflow: hidden;
+}
+
+.box-container .box .heading{
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    gap:10px;
+    padding:10px;
+    cursor:pointer;
+}
+
+.box-container .box.active .heading{
+    background-color:darkslategray;
+    color:azure;
+}
+
+.box-container .box .heading i{
+    transition: 0.5s cubic-bezier(0.05,0.89,0.26,1.31);
+}
+
+.box-container .box.active .heading i{
+    transform: rotate(180deg);
+}
+
+.box-container .box .content{
+    line-height: 1.8;
+    height: 0;
+    transform-origin: top;
+    transform:scaleY(0); 
+}
+
+.box-container .box.active .content{
+    padding:10px;
+    height:auto;
+    transform:scaleY(1);
+    /* transition: 0.5s cubic-bezier(0.05,0.89,0.26,1.31);
+*/
+}
+
+#about-contain, #contact-contain{
+    background-color:rgb(215, 233, 248);
+}
+
+#cont{
+    background: transparent;
+background-color:azure;
+opacity: 1.5;
+display:block;
+border:2px solid black;
+height:max-content;
+width:400px;
+padding:20px;
+} 
+
+#form{
+    width:300px;
+}
+
+#form-m{
+    height:200px;
+    width: 300px;
+}
+
+#sub-btn{
+    display:block;
+    height:50px;
+    width:80px;
+    margin: 10px;
+    padding: 10px;
+    align-items: center;
+    justify-content: center;
+    border:3px solid #070707;
+    background-color: aliceblue;
+    color: #070707;
+    
+}
+
+#sub-btn:hover{
+    background: #070707;
+    color: aliceblue;
+}
+
+#signup-contain{
+    display: block;
+    padding:20px;
+    background-color:rgb(215, 233, 248);
+}
+
+#sign{
+    background: transparent;
+background-color:azure;
+opacity: 1.5;
+display:block;
+border:2px solid rgb(206, 158, 158);
+height:max-content;
+width:400px;
+padding:20px;
+} 
+
+#s-form{
+    padding:15px;
+    background-color: aliceblue;
+border: 2px solid burlywood;
+}
+
+#s-form:hover{
+    background-color: blanchedalmond;
+    border: 2px solid black;
+}
+
+#box{
+    display: grid;
+place-items: center;
+align-items: center;
+justify-content: center;
+
+}
+
+#content{
+    display: grid;
+    place-items: center;
+}
+
+#login-contain{
+    display: block;
+    padding:20px;
+    background-color:rgb(215, 233, 248);
+}
+
+#block{
+    display:block;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid black;
+    padding:25px;
+    margin: 20px;
+    background:linear-gradient(to bottom,pink,yellow,orange,rgb(156, 98, 98));
+}
+
+#l-box{
+    display:grid;
+    align-items: center;
+    justify-content: center;
+}
+
+
+#block:hover{
+    border: #bc1515;
+    background-color:antiquewhite;
+}
